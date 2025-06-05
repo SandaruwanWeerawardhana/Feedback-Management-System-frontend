@@ -4,7 +4,6 @@ import HomePage from './pages/HomePage';
 import FeedbackFormPage from './pages/FeedbackFormPage';
 import AdminPage from './pages/AdminPage';
 import EditFeedbackPage from './pages/EditFeedbackPage';
-import AuthPages from './pages/AuthPages';
 import Footer from './components/Footer';
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
           <Route path="/feedback" element={<FeedbackFormPage />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/edit/:id" element={<EditFeedbackPage />} />
-          <Route path="/auth" element={<AuthPages />} />
         </Routes>
       </main>
       <Footer />

@@ -26,7 +26,7 @@ const Navbar = () => {
               Submit Feedback
             </Link>
             <Link 
-              to="/auth" 
+              to="/admin" 
               className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
             >
               Admin
