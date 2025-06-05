@@ -10,7 +10,6 @@ const FeedbackFormPage = () => {
             We value your opinion! Please tell us about your experience.
           </p>
         </div>
-        
         <FeedbackForm />
       </div>
     </div>
