@@ -1,10 +1,9 @@
-# Feedback Management System – Frontend
-
+<h1 align="center">Feedback Management System</h1>
 This project is a React + TypeScript + Vite application for a Feedback Management System. It features authentication (mocked), feedback submission, admin management, and a modern UI using Tailwind CSS.
 
 ## Backend and Frontend Links
 - **Frontend GitHub Repository:** [Feedback Management System Frontend](https://github.com/SandaruwanWeerawardhana/Feedback-Management-System-frontend)
-- **Backend Example/Template:** You can create your own backend using Node.js/Express. See the [Express documentation](https://expressjs.com/) or use the sample backend setup in this README below.
+- **Backend GitHub Repository:** [Feedback Management System Backend](https://github.com/SandaruwanWeerawardhana/Feedback-Management-System-backend.git)
 
 ## Features
 - User authentication (login/register) with mock API
