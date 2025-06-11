@@ -1,54 +1,92 @@
-# React + TypeScript + Vite
+# Feedback Management System – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React + TypeScript + Vite application for a Feedback Management System. It features authentication (mocked), feedback submission, admin management, and a modern UI using Tailwind CSS.
 
-Currently, two official plugins are available:
+## Backend and Frontend Links
+- **Frontend GitHub Repository:** [Feedback Management System Frontend](https://github.com/SandaruwanWeerawardhana/Feedback-Management-System-frontend)
+- **Backend Example/Template:** You can create your own backend using Node.js/Express. See the [Express documentation](https://expressjs.com/) or use the sample backend setup in this README below.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- User authentication (login/register) with mock API
+- Feedback form and submission
+- Admin dashboard for managing feedback
+- Responsive, modern UI with Tailwind CSS
+- React Router for navigation
+- **Animated authentication page background**
+- **Form validation and user feedback**
+- **Mock API integration for authentication**
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Folder Structure
+```
+client/
+  feedback system/
+    ├── public/
+    │   └── vite.svg
+    ├── src/
+    │   ├── api/
+    │   │   ├── authApi.ts
+    │   │   └── feedbackApi.ts
+    │   ├── components/
+    │   │   ├── FeedbackForm.tsx
+    │   │   ├── Footer.tsx
+    │   │   ├── Navbar.tsx
+    │   │   └── StarRating.tsx
+    │   ├── pages/
+    │   │   ├── AdminPage.tsx
+    │   │   ├── AuthPages.tsx
+    │   │   ├── EditFeedbackPage.tsx
+    │   │   ├── FeedbackFormPage.tsx
+    │   │   └── HomePage.tsx
+    │   ├── App.tsx
+    │   ├── index.css
+    │   ├── main.tsx
+    │   └── vite-env.d.ts
+    ├── eslint.config.js
+    ├── index.html
+    ├── package.json
+    ├── postcss.config.js
+    ├── README.md
+    ├── tailwind.config.js
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Mock Authentication API
+Authentication is handled by a mock API in `src/api/authApi.ts`. There are no real backend endpoints; all authentication is simulated in the frontend for development/demo purposes.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Login:**
+  - Email: `user@example.com`
+  - Password: `password`
+  - Any other credentials will fail.
+- **Register:**
+  - Any email except `user@example.com` will succeed.
+  - Registering with `user@example.com` will return an error (already registered).
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+To connect to a real backend, replace the logic in `src/api/authApi.ts` with actual HTTP requests (e.g., using `fetch` or `axios`).
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+3. **Open the app:**
+   Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+- `src/pages/` – Main pages (Auth, Home, Admin, etc.)
+- `src/components/` – Reusable UI components
+- `src/api/` – Mock API logic
+- `src/index.css` – Tailwind CSS setup
+
+## ESLint & TypeScript
+This project uses ESLint and TypeScript for code quality and type safety. See the comments in the original template below for advanced ESLint configuration.
+
+---
+
