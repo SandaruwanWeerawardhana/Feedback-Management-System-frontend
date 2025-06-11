@@ -84,8 +84,7 @@ To connect to a real backend, replace the logic in `src/api/authApi.ts` with act
 - `src/api/` – Mock API logic
 - `src/index.css` – Tailwind CSS setup
 
-## ESLint & TypeScript
-This project uses ESLint and TypeScript for code quality and type safety. See the comments in the original template below for advanced ESLint configuration.
-
----
-
+## SceenShot
+![s1](https://github.com/user-attachments/assets/d9c23b65-f041-43e6-9a69-d168a0650b94)
+![s2](https://github.com/user-attachments/assets/4bc987f7-8529-4879-8a8c-8eba90e8ef32)
+![s3](https://github.com/user-attachments/assets/5b5910d3-5d29-4642-915c-0e31aa592c2c)
